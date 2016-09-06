@@ -8,6 +8,6 @@ public class FibonacciTest {
 
     @Test
     public void testGetFib() throws Exception {
-        assertEquals("Test Fib", 1, Fibonacci.getFib());
+        assertEquals("Test Fib", 1, Fibonacci.getFib(1));
     }
 }
