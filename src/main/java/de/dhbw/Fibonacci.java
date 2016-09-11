@@ -1,6 +1,7 @@
 package de.dhbw;
 
 public class Fibonacci {
+
     public static int getFib(final int n)
     {
         if (n <= 2) {
@@ -8,4 +9,5 @@ public class Fibonacci {
         }
         return getFib(n - 1) + getFib(n - 2);
     }
+    
 }
