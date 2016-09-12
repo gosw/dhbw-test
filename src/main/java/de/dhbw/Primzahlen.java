@@ -1,7 +1,7 @@
 package de.dhbw;
 
 public class Primzahlen {
-    public static Integer primzahlenBerechnen() {
+    public static int primzahlenBerechnen() {
         return 10;
     }
 }
