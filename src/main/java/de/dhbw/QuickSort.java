@@ -4,7 +4,7 @@ import java.util.Vector;
 
 public class QuickSort {
 
-    public static Vector<Integer> sortieren(Vector<Integer> liste){
+    public static int[] sortieren(int[] liste){
         //TODO: Implementierung
         return liste;
     }
