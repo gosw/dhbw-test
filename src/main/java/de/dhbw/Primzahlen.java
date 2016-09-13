@@ -1,7 +1,13 @@
 package de.dhbw;
 
 public class Primzahlen {
-    public static int blub() {
-        return 10;
+    public static boolean primzahlenTesten(int zahl) {
+
+        for(int i=2; i<zahl/2; i++) {
+            if (zahl%i==0){
+               return false;
+            }
+        }
+        return true;
     }
 }

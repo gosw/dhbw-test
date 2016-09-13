@@ -9,8 +9,13 @@ import static org.junit.Assert.*;
  */
 public class PrimzahlenTest {
     @Test
-    public void primzahlenBerechnen() throws Exception {
-        assertEquals("Zahl nicht korrekt",10,Primzahlen.primzahlenBerechnen());
+    public void korrektePrimzahlenTest() throws Exception {
+        assertEquals("Primzahl als nicht Primzahl definiert",true,Primzahlen.primzahlenTesten(17));
+    }
+
+    @Test
+    public void falschePrimzahlenTest() throws Exception {
+        assertEquals("Zahl faelschlicherweise als Primzahl definiert",false,Primzahlen.primzahlenTesten(10));
     }
 
 }
