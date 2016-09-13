@@ -40,5 +40,10 @@ public class FibonacciTest {
     public void testGetFibSiebte() throws Exception {
         assertEquals(13, Fibonacci.getFib(7));
     }
+
+    @Test
+    public void testGetFibAchte() throws Exception {
+        assertEquals(21, Fibonacci.getFib(8));
+    }
     
 }
