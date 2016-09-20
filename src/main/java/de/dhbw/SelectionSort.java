@@ -1,12 +1,19 @@
 package de.dhbw;
 
-import java.util.Vector;
-
 public class SelectionSort {
 
-    public static Vector<Integer> sortieren(Vector<Integer> liste){
-        //TODO: Implementierung
-        return liste;
+    public static int[] selectionsort(int[] sortieren) {
+        for (int i = 0; i < sortieren.length - 1; i++) {
+            for (int j = i + 1; j < sortieren.length; j++) {
+                if (sortieren[i] > sortieren[j]) {
+                    int temp = sortieren[i];
+                    sortieren[i] = sortieren[j];
+                    sortieren[j] = temp;
+                }
+            }
+        }
+
+        return sortieren;
     }
 
 }
